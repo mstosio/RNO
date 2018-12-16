@@ -16,6 +16,17 @@ body {
     box-sizing: border-box;
 }
 
+.text-blue {
+    color: #009fdc;
+}
+
+h1 {
+    /* color: #142a54; */
+    
+}
+
+
+
 
 .navbar {
     font-size: 1.6rem;
@@ -60,6 +71,7 @@ body {
 
 
 .icon-bar {
+    z-index: 999999;
     position: fixed;
     top: 150px;
     right: 0;
@@ -89,6 +101,10 @@ body {
 
 .slider {
     min-height: 620px;
+} 
+
+#slider-mez {
+    min-height: 135px;
 }
 
 .slider .background-white {
@@ -546,9 +562,7 @@ body {
     font-size: 3.8rem;
 }
 
-.text-blue {
-    color: #009fdc;
-}
+
 
 /* --------------FOOTER ------------------------------*/
 
@@ -623,7 +637,7 @@ body {
 }
 
 
-.item-youtube {
+/* .item-youtube {
     content: url('../icons/contact-youtube.png')
 }
 
@@ -633,7 +647,7 @@ body {
 
 .footer-column-item-social.item-facebook:before {
     content: url('../icons/contact-facebook.png')
-}
+} */
 
 .footer-column-item.column-item-contact {
     font-size: 20px;
@@ -659,6 +673,122 @@ body {
 .sub-footer-text {
     color: #142a54;
     font-size: 15px;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!ANTRESOLE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+.slider-mezzanines {
+    height: 500px;
+    margin-top: 25px;
+    background: url(../img/slider-mez.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+    
+}
+
+.equipment {
+    margin-top: 50px;
+}
+
+.equipment-text {
+    padding-top: 10px;
+    font-size: 1.5rem;
+    font-family: "Segoe UI";
+}
+
+.eq-list-item {
+    list-style-type: none;
+    font-size: 16px;
+    /* padding-left: 30px; */
+}
+
+.equipment-list {
+    margin-top: 15px;
+}
+
+.eq-list-item:before {
+    content: url('../icon/blue-style-type.png');
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.realizations {
+    margin-top: 50px;
+}
+
+.realizations-header {
+    font-size: 38px;
+    line-height: 42.01px;
+}
+
+.realizations-slider {
+    margin-top: 50px;
+    background: url(../img/realizations-slider.jpg);
+    height: 456px;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!ERGO WHEEL!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+.erowheel-slider {
+    height: 500px;
+    background: url(../img/ergowheel-slider.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
+}
+
+.examples-header {
+    margin-top: 25px;
+}
+
+.examples-img-1 {
+    /* max-height: 231px;
+    max-width: 529px; */
+}
+.examples-img-2 {
+    /* max-width: 593px;
+    max-height: 231px; */
+}
+
+.examples-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.examples-title {
+    font-size: 16px; 
+    text-align: center;
+    padding-top: 15px;
+}
+
+.benefits-header {
+    margin-top: 55px;
+    font-size: 38px;
+    margin-bottom: 50px;
+    color: #002e5e;
+}
+
+.benefits-title {
+    font-size: 22px;
+    color: #142a54;
+}
+
+.benefits-text {
+    font-size: 15px;
+    letter-spacing: 0.14px;
+    margin-top: 15px;
+    margin-bottom: 42px;
 }
 
 /* ------------------RWD ------------------------------------------*/
@@ -734,6 +864,10 @@ body {
         padding-bottom: 20px;
     }
 
+    .equipment-text {
+        margin: 50px 0 50px 0;
+    }
+
 }
 
 @media (max-width: 767px) {
@@ -775,7 +909,9 @@ body {
         justify-content: center;
     }
 
-
+    .text-blue {
+        padding-right: 10px;
+    }
 
     .offer-box {
         margin: 25px 0 25px 0 !important;
@@ -805,6 +941,8 @@ body {
         position: static !important;
         padding-bottom: 15px;
     }
+    
+    
 }
 
 @media (max-width: 850px) {
@@ -829,11 +967,16 @@ body {
     }
 
 
+
 }
 
 @media (max-width: 991.98px) {
     .nav-link {
         font-size: 12px;
+    }
+
+    .realizations-slider, .slider-mezzanines {
+        background-size: cover;
     }
 
 
@@ -852,10 +995,25 @@ body {
         padding-bottom: 50px;
     }
 
+    .examples-img-2 {
+        margin-top: 50px;
+    }
+
+    .icon-bar {
+        display: none;
+    }
+
 }
 
 @media (max-width:1200px) {
     .navbar-link {
         padding-left: 0 !important;
     }
+
+    .slider-mezzanines {
+        
+    }
+
+    
+    
 }
