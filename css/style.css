@@ -715,6 +715,10 @@ h1 {
     margin-left: 5px;
 }
 
+.eq-list-padd {
+   padding-left: 30px;
+}
+
 .realizations {
     margin-top: 50px;
 }
@@ -789,6 +793,56 @@ h1 {
     letter-spacing: 0.14px;
     margin-top: 15px;
     margin-bottom: 42px;
+}
+
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!AKCESORIA!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+
+
+.accessories-slider {
+    background: url(../img/accessories-slider.jpg);
+    height: 499px;
+}
+
+.specialization-header {
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.specialization-text {
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.specialization-text-2 {
+    display: block;
+    max-width: 350px;
+}
+
+.system {
+    margin-top: 40px;
+}
+
+.downloads {
+    margin-top: 35px;
+}
+
+.button {
+    width: 359px;
+    margin-right: 25px;
+    height: 56px;
+    background-color: #142a54;
+    color: #ffffff;
+    font-size: 19px;
+    border: none;
+
+}
+
+.downloads-button {
+    margin-top: 40px;   
+}
+
+.button:hover {
+    background-color: #019fdc;
 }
 
 /* ------------------RWD ------------------------------------------*/
@@ -866,6 +920,10 @@ h1 {
 
     .equipment-text {
         margin: 50px 0 50px 0;
+    }
+
+    .eq-list-padd  {
+        padding: 0;
     }
 
 }
@@ -1005,6 +1063,12 @@ h1 {
 
 }
 
+@media (max-width:1092px) {
+   .system-img {
+        padding-top: 30px;
+    }
+    
+}
 @media (max-width:1200px) {
     .navbar-link {
         padding-left: 0 !important;
